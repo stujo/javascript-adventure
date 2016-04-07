@@ -2,8 +2,16 @@
 
 var currentIndex = 0
 var worldTourPlaces = [
-{name: "London", description: "Capital of England", imageUrl: "http://www.suffolkcoastsailing.co.uk/_wp/wp-content/uploads/2014/04/tower-bridge1.jpg" }, 
-{name: "Paris", description: "Capital of France", imageUrl: "http://travelnoire.com/wp-content/uploads/2014/02/Eiffel-Tower-Paris-France.jpg"}
+    { 
+    	name: "London", 
+    	description: "Capital of England", 
+    	imageUrl: "http://www.suffolkcoastsailing.co.uk/_wp/wp-content/uploads/2014/04/tower-bridge1.jpg" 
+    },
+    { 
+    	name: "Paris", 
+    	description: "Paris was founded in the 3rd century BC by a Celtic people called the Parisii, who gave the city its name. By the 12th century, Paris was the largest city in the western world, a prosperous trading centre, and the home of the University of Paris, one of the first in Europe. In the 18th century, it was the centre stage for the French Revolution, and became an important centre of finance, commerce, fashion, science, and the arts, a position it still retains today. Since the 19th century, the built-up area of Paris has grown far beyond its administrative borders.", 
+    	imageUrl: "http://travelnoire.com/wp-content/uploads/2014/02/Eiffel-Tower-Paris-France.jpg" 
+    }
 ];
 
 // function printCurrentLocationName() {
@@ -15,13 +23,22 @@ function printCurrentLocationName() {
 }
 
 function forward() {
-    currentIndex++;
+	if(currentIndex < worldTourPlaces.length - 1){
+      currentIndex++;
+      return true;
+    } else { 
+      return false;
+    }
 }
 
 function backward() {
-    currentIndex++;
+	if(currentIndex > 0){
+      currentIndex--;
+      return true;
+    } else { 
+      return false;
+    }
 }
-
 
 
 // DO NOT EDIT TO CODE BENEATH THIS LINE (YET!) 
@@ -76,20 +93,51 @@ function runTutorialChecks() {
 runTutorialChecks();
 
 
-function setupApplication(){
+function setupApplication() {
+
+    function _currentPlace() {
+        return worldTourPlaces[currentIndex];
+    }
+
+    function bindCallbacks() {
+        $('#button_backward').click(function() {
+            backward();
+            updateView();
+        });
+        $('#button_forward').click(function() {
+            forward();
+            updateView();
+        });
+    }
+
+    function updateView() {
+    	var place = _currentPlace();
+        if (typeof place === "undefined") {
+            $('#place_name').html("UNDEFINED");
+            $('#place_description').html("currentIndex is " + currentIndex + ", check you backwards and forwards implementations and check release 5 is implemented correctly");
+            $('#place_card').css({
+                "background": "none",
+                "background-color": "#333"
+            });
+        } else {
+            $('#place_name').html(place.name);
+            $('#place_description').html(place.description);
+            $('#place_card').css({ "background": "url(" + place.imageUrl + ") center / cover" });
+        }
+    }
 
 
-	function updateView(place){
-       $('#place_name').html(place.name);
-       $('#place_description').html(place.description);
-       $('#place_card').css({"background":"url("+place.imageUrl+") center / cover"});
-	}
-
-	updateView(worldTourPlaces[currentIndex]);
+    function preloadImages() {
+    	worldTourPlaces.forEach(function(place, index){
+    		var img = new Image();
+    		if(index == currentIndex){
+    			$(img).load(updateView);
+    	  	}
+    	  	img.src = place.imageUrl;
+    	});
+    }
+    preloadImages();
+    bindCallbacks();
 }
 
 setupApplication();
-
-
-
-
