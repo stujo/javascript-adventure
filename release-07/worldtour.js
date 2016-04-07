@@ -7,7 +7,7 @@
 // Get the basics working first before you try to change anything
 
 if(typeof currentIndex !== 'number') { 
-  error('"currentIndex" is not defined as an integer'); 
+  console.error('"currentIndex" is not defined as an integer'); 
 }
 
 
