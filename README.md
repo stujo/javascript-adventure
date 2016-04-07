@@ -5,7 +5,6 @@
 * Functions
 * Return Values
 * Conditionals
-* Loops
 * A little bit of jQuery
 
 #Release 1 - Arrays
@@ -50,6 +49,7 @@ Improve your ``forward`` and ``backward`` functions so that you cannot move to a
 ##Hints
   * Check the length of the ``worldTourPlaces`` array
   * Use ``if``
+  * Return ``true`` if the operation was successful otherwise ``false``
 ##Playtime
   * Test them both out
 
