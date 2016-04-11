@@ -1,10 +1,44 @@
 // Put Your Code Below This Line
 
+var currentIndex = 0
+var worldTourPlaces = [
+    { 
+    	name: "London", 
+    	description: "Capital of England", 
+    	imageUrl: "http://www.suffolkcoastsailing.co.uk/_wp/wp-content/uploads/2014/04/tower-bridge1.jpg" 
+    },
+    { 
+    	name: "Paris", 
+    	description: "Paris was founded in the 3rd century BC by a Celtic people called the Parisii, who gave the city its name. By the 12th century, Paris was the largest city in the western world, a prosperous trading centre, and the home of the University of Paris, one of the first in Europe. In the 18th century, it was the centre stage for the French Revolution, and became an important centre of finance, commerce, fashion, science, and the arts, a position it still retains today. Since the 19th century, the built-up area of Paris has grown far beyond its administrative borders.", 
+    	imageUrl: "http://travelnoire.com/wp-content/uploads/2014/02/Eiffel-Tower-Paris-France.jpg" 
+    }
+];
 
-// YOUR CODE HERE!
+// function printCurrentLocationName() {
+//     console.log(worldTourPlaces[currentIndex]);
+// }
 
+function printCurrentLocationName() {
+    console.log(worldTourPlaces[currentIndex].name);
+}
 
-// Save this file and open ./index.html in your browser
+function forward() {
+	if(currentIndex < worldTourPlaces.length - 1){
+      currentIndex++;
+      return true;
+    } else { 
+      return false;
+    }
+}
+
+function backward() {
+	if(currentIndex > 0){
+      currentIndex--;
+      return true;
+    } else { 
+      return false;
+    }
+}
 
 
 // DO NOT EDIT TO CODE BENEATH THIS LINE (YET!) 
