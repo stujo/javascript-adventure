@@ -40,6 +40,7 @@ Encapsulate the code you've been using to print out the current location in a fu
 #Release 4 - More Functions
 Allow yourself to move forward and backward on your tour, with ``function``s
 ##Hints
++ Google how to increment a number in JavaScript
 + Make a function called ``forward`` which increments the value of ``currentIndex``
 + Make a function called ``backward`` which decrements the value of ``currentIndex``
 
@@ -65,6 +66,7 @@ Loop through your ``worldTourPlaces`` array and ``console.log()`` each one of th
 + Use a ``for`` loop which checks the ``length`` of the array
 
 ##Playtime
++ How could you use a while loop instead?
 + Find out about JavaScript's Array ``forEach`` and try to use it
 
 
