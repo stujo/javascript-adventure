@@ -7,6 +7,13 @@
 * Conditionals
 * A little bit of jQuery
 
+#Setup to DBC JavaScript Intro
+
+* Get slides: [bit.ly/dbcseattlejsslides](http://bit.ly/dbcseattlejsslides )
+* Get the code: [bit.ly/dbcseattlejs](http://bit.ly/dbcseattlejs)
+* Use REPL.IT : [https://repl.it/languages/javascript](https://repl.it/languages/javascript)
+* Chatroom : [tlk.io/seattlejsintro](https://tlk.io/seattlejsintro)
+
 #Release 1 - Arrays
 Make a simple list of places you want to visit 
 ##Hints
