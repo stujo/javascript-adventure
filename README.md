@@ -76,7 +76,7 @@ Now we are going to use the code you've written along with jQuery to make a tour
 + Create an empty folder called ``worldtour`` on your desktop
 + Download the [index.html template](https://raw.githubusercontent.com/stujo/javascript-adventure/master/release-07/index.html) and save it in the ``worldtour`` folder
 + Download the [app.js template](https://raw.githubusercontent.com/stujo/javascript-adventure/master/release-07/app.js) and save it in the ``worldtour`` folder
-+ Download the [styles.css template](https://raw.githubusercontent.com/stujo/javascript-adventure/master/release-07/style.css) and save it in the ``worldtour`` folder
++ Download the [styles.css template](https://raw.githubusercontent.com/stujo/javascript-adventure/master/release-07/styles.css) and save it in the ``worldtour`` folder
 + Open your local ``worldtour/index.hml`` in your text editor (Use Sublime)
 + Open your local ``worldtour/app.js`` in your text editor (Use Sublime) and read it
 + Follow the instructions in that file
