@@ -58,7 +58,17 @@ Improve your ``forward`` and ``backward`` functions so that you cannot move to a
 ##Playtime
 + Test them both out
 
-#Release 6 - Objects
+#Release 6 - Loops
+Loop through your ``worldTourPlaces`` array and ``console.log()`` each one of the places
+
+##Hints
++ Use a ``for`` loop which checks the ``length`` of the array
+
+##Playtime
++ Find out about JavaScript's Array ``forEach`` and try to use it
+
+
+#Release 7 - Objects
 Instead of just storing the name of each place you want to visit as a String, use JavaScript Objects instead. For each place; store the name as well as the URL of a picture and a description of the place.
 ##Hints
 + Change your ``worldTourPlaces`` Array of Strings to an Array of Objects
@@ -70,18 +80,19 @@ Instead of just storing the name of each place you want to visit as a String, us
 ##Playtime
 + Check that ``printCurrentLocationName()`` still works and if it doesn't:  fix it
 
-#Release 7 - jQuery
+#Release 8 - jQuery
 Now we are going to use the code you've written along with jQuery to make a tour guide
 ##Hints
 + Create an empty folder called ``worldtour`` on your desktop
-+ Download the [index.html template](https://raw.githubusercontent.com/stujo/javascript-adventure/master/release-07/index.html) and save it in the ``worldtour`` folder
-+ Download the [app.js template](https://raw.githubusercontent.com/stujo/javascript-adventure/master/release-07/app.js) and save it in the ``worldtour`` folder
-+ Download the [styles.css template](https://raw.githubusercontent.com/stujo/javascript-adventure/master/release-07/styles.css) and save it in the ``worldtour`` folder
++ Download the [index.html template](https://raw.githubusercontent.com/stujo/javascript-adventure/master/project/index.html) and save it in the ``worldtour`` folder
++ Download the [app.js template](https://raw.githubusercontent.com/stujo/javascript-adventure/master/project/app.js) and save it in the ``worldtour`` folder
++ Download the [styles.css template](https://raw.githubusercontent.com/stujo/javascript-adventure/master/project/styles.css) and save it in the ``worldtour`` folder
 + Open your local ``worldtour/index.hml`` in your text editor (Use Sublime)
 + Open your local ``worldtour/app.js`` in your text editor (Use Sublime) and read it
 + Follow the instructions in that file
 + Open your local ``worldtour/index.hml`` file in your browser (Use Chrome)
 
 ##Playtime
-+ What would you like to try?
++ Add another button which has the function of restarting the tour at the beginning
++ Try to add some HTML elements to a new ``div`` (hint: give it an id attribute) in the page using the jQuery ``.html()`` function
 
