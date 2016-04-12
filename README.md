@@ -105,3 +105,8 @@ Now we are going to use the code you've written along with jQuery to make a tour
 + Add another button which has the function of restarting the tour at the beginning
 + Try to add some HTML elements to a new ``div`` (hint: give it an id attribute) in the page using the jQuery ``.html()`` function
 
+# Next Steps
+
+* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+* [Eloquent JavaScript](http://eloquentjavascript.net/)
+* [Learn to Program - Ruby](https://pine.fm/LearnToProgram/chap_06.html)
