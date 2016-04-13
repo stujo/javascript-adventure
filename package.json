@@ -1,0 +1,22 @@
+{
+  "name": "javascript-adventure",
+  "version": "1.0.0",
+  "description": "* Arrays * Objects * Functions * Return Values * Conditionals * A little bit of jQuery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stujo/javascript-adventure.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stujo/javascript-adventure/issues"
+  },
+  "homepage": "https://github.com/stujo/javascript-adventure#readme",
+  "dependencies": {
+    "markdown-to-html": "0.0.11"
+  }
+}
