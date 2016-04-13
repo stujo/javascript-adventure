@@ -79,3 +79,7 @@
 .demo-hidden {
   display: none;
 }
+
+#place_description {
+  min-height: 150px;
+}
