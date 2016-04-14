@@ -15,10 +15,10 @@
 * Chatroom : [tlk.io/seattlejsintro](https://tlk.io/seattlejsintro)
 
 #Release 1 - Arrays
-Make a simple list of places you want to visit 
+Make a simple list of places you want to visit as an Array
 ##Hints
 + Create a local variable called ``worldTourPlaces``
-+ Assign it to be a list of ``Strings`` 
++ Assign it to be a Array of ``Strings`` 
 + Each String in the Array should be the name of a place you want to visit
 
 ##Playtime
