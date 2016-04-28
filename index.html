@@ -34,7 +34,7 @@
 <h1>
 <a id="user-content-release-1---arrays" class="anchor" href="#release-1---arrays" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 1 - Arrays</h1>
 
-<p>Make a simple list of places you want to visit </p>
+<p>Make a simple list of places you want to visit as an Array</p>
 
 <h2>
 <a id="user-content-hints" class="anchor" href="#hints" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hints</h2>
@@ -42,7 +42,7 @@
 <ul>
 <li>Create a local variable called <code>worldTourPlaces</code>
 </li>
-<li>Assign it to be a list of <code>Strings</code> </li>
+<li>Assign it to be a Array of <code>Strings</code> </li>
 <li>Each String in the Array should be the name of a place you want to visit</li>
 </ul>
 
@@ -77,19 +77,43 @@
 </ul>
 
 <h1>
-<a id="user-content-release-3---functions" class="anchor" href="#release-3---functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 3 - Functions</h1>
+<a id="user-content-release-3---objects" class="anchor" href="#release-3---objects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 3 - Objects</h1>
 
-<p>Encapsulate the code you've been using to print out the current location in a function called <code>currentLocation</code></p>
+<p>Instead of just storing the name of each place you want to visit as a String, use JavaScript Objects instead. For each place; store the name as well as the URL of a picture and a description of the place.</p>
 
 <h2>
 <a id="user-content-hints-2" class="anchor" href="#hints-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hints</h2>
 
 <ul>
-<li>Make a function called <code>printCurrentLocationName</code> which uses <code>console.log</code>, <code>worldTourPlaces</code> and <code>currentIndex</code> to print out the current location</li>
+<li>Change your <code>worldTourPlaces</code> Array of Strings to an Array of Objects</li>
+<li>Use properties called <code>name</code>, <code>description</code> and <code>imageUrl</code> to store the new data</li>
+<li>Use <a href="https://www.google.com/search?q=tower+bridge&amp;tbm=isch">Google Image Search</a> to find images and copy the urls</li>
+<li>Create a new function called <code>currentLocationImageUrl()</code> which returns the <code>imageUrl</code> property for the current location</li>
 </ul>
 
 <h2>
 <a id="user-content-playtime-2" class="anchor" href="#playtime-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Playtime</h2>
+
+<ul>
+<li>Print out the name of your current location using <code>worldTourPlaces</code>, the <code>name</code> property and <code>currentIndex</code>
+</li>
+</ul>
+
+<h1>
+<a id="user-content-release-4---functions" class="anchor" href="#release-4---functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 4 - Functions</h1>
+
+<p>Encapsulate the code you've been using to print out the current location in a function called <code>currentLocation</code></p>
+
+<h2>
+<a id="user-content-hints-3" class="anchor" href="#hints-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hints</h2>
+
+<ul>
+<li>Make a function called <code>printCurrentLocationName</code> which uses <code>console.log</code>, <code>worldTourPlaces</code> and <code>currentIndex</code> to print out the current location</li>
+<li>Make a new function called <code>currentLocationImageUrl()</code> which returns the <code>imageUrl</code> property for the current location</li>
+</ul>
+
+<h2>
+<a id="user-content-playtime-3" class="anchor" href="#playtime-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Playtime</h2>
 
 <ul>
 <li>Print out the name of your current location using <code>printCurrentLocationName()</code>
@@ -98,12 +122,12 @@
 </ul>
 
 <h1>
-<a id="user-content-release-4---more-functions" class="anchor" href="#release-4---more-functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 4 - More Functions</h1>
+<a id="user-content-release-5---more-functions" class="anchor" href="#release-5---more-functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 5 - More Functions</h1>
 
 <p>Allow yourself to move forward and backward on your tour, with <code>function</code>s</p>
 
 <h2>
-<a id="user-content-hints-3" class="anchor" href="#hints-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hints</h2>
+<a id="user-content-hints-4" class="anchor" href="#hints-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hints</h2>
 
 <ul>
 <li>Google how to increment a number in JavaScript</li>
@@ -114,7 +138,7 @@
 </ul>
 
 <h2>
-<a id="user-content-playtime-3" class="anchor" href="#playtime-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Playtime</h2>
+<a id="user-content-playtime-4" class="anchor" href="#playtime-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Playtime</h2>
 
 <ul>
 <li>Print out the name of your current location using <code>printCurrentLocationName()</code>
@@ -124,12 +148,12 @@
 </ul>
 
 <h1>
-<a id="user-content-release-5---conditionals" class="anchor" href="#release-5---conditionals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 5 - Conditionals</h1>
+<a id="user-content-release-6---conditionals" class="anchor" href="#release-6---conditionals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 6 - Conditionals</h1>
 
 <p>Improve your <code>forward</code> and <code>backward</code> functions so that you cannot move to an undefined location</p>
 
 <h2>
-<a id="user-content-hints-4" class="anchor" href="#hints-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hints</h2>
+<a id="user-content-hints-5" class="anchor" href="#hints-5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hints</h2>
 
 <ul>
 <li>Check the length of the <code>worldTourPlaces</code> array</li>
@@ -140,53 +164,30 @@
 </ul>
 
 <h2>
-<a id="user-content-playtime-4" class="anchor" href="#playtime-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Playtime</h2>
+<a id="user-content-playtime-5" class="anchor" href="#playtime-5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Playtime</h2>
 
 <ul>
 <li>Test them both out</li>
 </ul>
 
 <h1>
-<a id="user-content-release-6---loops" class="anchor" href="#release-6---loops" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 6 - Loops</h1>
+<a id="user-content-release-7---loops" class="anchor" href="#release-7---loops" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 7 - Loops</h1>
 
 <p>Loop through your <code>worldTourPlaces</code> array and <code>console.log()</code> each one of the places</p>
 
 <h2>
-<a id="user-content-hints-5" class="anchor" href="#hints-5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hints</h2>
+<a id="user-content-hints-6" class="anchor" href="#hints-6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hints</h2>
 
 <ul>
 <li>Use a <code>for</code> loop which checks the <code>length</code> of the array</li>
 </ul>
 
 <h2>
-<a id="user-content-playtime-5" class="anchor" href="#playtime-5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Playtime</h2>
+<a id="user-content-playtime-6" class="anchor" href="#playtime-6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Playtime</h2>
 
 <ul>
 <li>How could you use a while loop instead?</li>
 <li>Find out about JavaScript's Array <code>forEach</code> and try to use it</li>
-</ul>
-
-<h1>
-<a id="user-content-release-7---objects" class="anchor" href="#release-7---objects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Release 7 - Objects</h1>
-
-<p>Instead of just storing the name of each place you want to visit as a String, use JavaScript Objects instead. For each place; store the name as well as the URL of a picture and a description of the place.</p>
-
-<h2>
-<a id="user-content-hints-6" class="anchor" href="#hints-6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hints</h2>
-
-<ul>
-<li>Change your <code>worldTourPlaces</code> Array of Strings to an Array of Objects</li>
-<li>Use properties called <code>name</code>, <code>description</code> and <code>imageUrl</code> to store the new data</li>
-<li>Use <a href="https://www.google.com/search?q=tower+bridge&amp;tbm=isch">Google Image Search</a> to find images and copy the urls</li>
-<li>What needs to change in the code we've already written, to accomodate this new structure?</li>
-<li>Create a new function called <code>currentLocationImageUrl()</code> which returns the <code>imageUrl</code> property for the current location</li>
-</ul>
-
-<h2>
-<a id="user-content-playtime-6" class="anchor" href="#playtime-6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Playtime</h2>
-
-<ul>
-<li>Check that <code>printCurrentLocationName()</code> still works and if it doesn't:  fix it</li>
 </ul>
 
 <h1>
